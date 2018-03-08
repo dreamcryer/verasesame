@@ -1,0 +1,1442 @@
+{
+	"default_dynamic_icon" : "zwave_default.png",
+	"dynamic_icons" : [{
+			"img" : "icons_hue_a19.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_a19.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_a19.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT007"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_a19.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT007"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_spot_br30.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT002"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_spot_br30.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT002"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_spot_gu10.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT003"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_spot_gu10.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LCT003"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+
+		}, {
+			"img" : "icons_hue_light_strips.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}, {
+					"id" : "fill2",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill2",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}, {
+					"id" : "fill3",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill3",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LST001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_light_strips.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}, {
+					"id" : "fill2",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill2",
+					"argument" : "opacity",
+					"value" : "100"
+				}, {
+					"id" : "fill3",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill3",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LST001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_light_strips.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}, {
+					"id" : "fill2",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill2",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}, {
+					"id" : "fill3",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill3",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LST002"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_light_strips.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}, {
+					"id" : "fill2",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill2",
+					"argument" : "opacity",
+					"value" : "100"
+				}, {
+					"id" : "fill3",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill3",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LST002"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc010_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC006"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc010_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC006"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc010_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC010"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc010_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC010"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc010_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc010_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_bloom_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC011"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_bloom_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC011"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_bloom_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC012"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_bloom_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC012"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc007_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC007"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_iris_llc007_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC007"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_disney_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC013"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_disney_light.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC013"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_beyond.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_beyond.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM001"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_phoenix_downlight.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM010"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_phoenix_downlight.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM010"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_phoenix_downlight.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM011"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_phoenix_downlight.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM011"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_phoenix_downlight.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM012"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_phoenix_downlight.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLM012"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_go.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}, {
+					"id" : "fill2",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill2",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC020"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_go.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}, {
+					"id" : "fill2",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill2",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "BulbModelID",
+					"operator" : "==",
+					"value" : "LLC020"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_normal_light_group.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : {
+						"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+						"variable" : "LampHexValue"
+					}
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : {
+						"service" : "urn:upnp-org:serviceId:Dimming1",
+						"variable" : "LoadLevelStatus"
+					}
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "GroupType",
+					"operator" : "==",
+					"value" : "NLG"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : ">",
+					"value" : "0"
+				}
+			]
+		}, {
+			"img" : "icons_hue_normal_light_group.svg",
+			"parameters" : [{
+					"id" : "fill1",
+					"argument" : "fill",
+					"value" : "#8F8F8F"
+				}, {
+					"id" : "fill1",
+					"argument" : "opacity",
+					"value" : "100"
+				}
+			],
+			"conditions" : [{
+					"service" : "urn:micasaverde-com:serviceId:PhilipsHue1",
+					"variable" : "GroupType",
+					"operator" : "==",
+					"value" : "NLG"
+				}, {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"operator" : "==",
+					"value" : "0"
+				}
+			]
+		}
+	],
+	"x" : "2",
+	"y" : "4",
+	"iconText" : "1",
+	"inScene" : "1",
+	"ToggleButton" : 1,
+	"Tabs" : [{
+			"Label" : {
+				"lang_tag" : "ui7_tabname_control",
+				"text" : "Control"
+			},
+			"Position" : "0",
+			"TabType" : "flash",
+			"AfterInit" : {
+				"ScriptName" : "J_PhilipsHueLamp2.js",
+				"Function" : "PhilipsHueLamp2.color_picker"
+			},
+			"SceneGroup" : [{
+					"id" : "1",
+					"top" : "1",
+					"left" : "0",
+					"x" : "2",
+					"y" : "3"
+				}
+			],
+			"top_navigation_tab" : 1,
+			"ControlGroup" : [{
+					"id" : "1",
+					"isSingle" : "1",
+					"scenegroup" : "1"
+				}
+			],
+			"Control" : [{
+					"ControlGroup" : "1",
+					"ControlType" : "slider",
+					"IgnoreInCpanel" : "1",
+					"top" : "0",
+					"left" : "0",
+					"Label" : {
+						"lang_tag" : "hue_cmd_on",
+						"text" : "On"
+					},
+					"Style" : "numeric",
+					"LabelMin" : {
+						"lang_tag" : "hue_dimmable_light_label_min",
+						"text" : "off"
+					},
+					"LabelMax" : {
+						"lang_tag" : "hue_dimmable_light_label_max",
+						"text" : "on"
+					},
+					"LabelSymbol" : {
+						"lang_tag" : "hue_dimmable_light_label_symbol",
+						"text" : "%"
+					},
+					"HorizontalMultiplier" : "1.6",
+					"Display" : {
+						"Service" : "urn:upnp-org:serviceId:Dimming1",
+						"Variable" : "LoadLevelStatus",
+						"MinValue" : "0",
+						"MaxValue" : "100",
+						"Top" : 100,
+						"Left" : 50,
+						"Width" : 100,
+						"Height" : 25,
+						"ID" : "newLoadlevelTarget"
+					},
+					"Command" : {
+						"Service" : "urn:upnp-org:serviceId:Dimming1",
+						"Action" : "SetLoadLevelTarget",
+						"Parameters" : [{
+								"Name" : "newLoadlevelTarget",
+								"ID" : "newLoadlevelTarget"
+							}
+						],
+						"HumanFriendlyText" : {
+							"lang_tag" : "hue_cmd_dimmable_light_level",
+							"text" : "Level"
+						},
+						"Sufix" : "%",
+						"Validation" : {
+							"Type" : "number",
+							"Min" : "0",
+							"Max" : "100"
+						},
+						"Description" : {
+							"lang_tag" : "hue_cmd_dimmable_light_level_description",
+							"text" : "Enter a value between 0 and 100"
+						}
+					},
+					"ControlCode" : "dim"
+				}, {
+					"ControlGroup" : "1",
+					"ControlType" : "multi_state_button",
+					"IgnoreInCpanel" : "1",
+					"top" : "0",
+					"left" : "0",
+					"states" : [{
+							"Label" : {
+								"lang_tag" : "ui7_cmd_on",
+								"text" : "On"
+							},
+							"ControlGroup" : "1",
+							"Display": {
+								"Service": "urn:upnp-org:serviceId:Dimming1",
+								"Variable": "LoadLevelStatus",
+								"Value": "100"
+							},
+							"Command": {
+								"Service": "urn:upnp-org:serviceId:Dimming1",
+								"Action": "SetLoadLevelTarget",
+								"Parameters": [
+									{
+										"Name": "newLoadlevelTarget",
+										"Value": "100"
+									}
+								]
+							},
+							"ControlCode" : "power_on"
+						}, {
+							"Label" : {
+								"lang_tag" : "ui7_cmd_off",
+								"text" : "Off"
+							},
+							"ControlGroup" : "1",
+							"Display": {
+								"Service": "urn:upnp-org:serviceId:Dimming1",
+								"Variable": "LoadLevelStatus",
+								"Value": "0"
+							},
+							"Command": {
+								"Service": "urn:upnp-org:serviceId:Dimming1",
+								"Action": "SetLoadLevelTarget",
+								"Parameters": [
+									{
+										"Name": "newLoadlevelTarget",
+										"Value": "0"
+									}
+								]
+							},
+							"ControlCode" : "power_off"
+						}
+					]
+				}
+			],
+        "Conditions": [
+            {
+                "Trigger": {
+                    "Operands": [
+                        {
+                            "Service": "urn:upnp-org:serviceId:Dimming1",
+                            "Variable": "LoadLevelStatus",
+                            "Value": {
+                                "Min": "1",
+                                "Max": "100"
+                            }
+                        }
+                    ]
+                },
+                "Actions": [
+                    {
+                        "Action": "set_value",
+                        "ActionArgument": "100",
+                        "Target": "power_on"
+                    }
+                ]
+            }
+        ]
+		}, {
+			"Label" : {
+				"lang_tag" : "ui7_notifications",
+				"text" : "Notifications"
+			},
+			"Position" : "3",
+			"TabType" : "javascript",
+			"ScriptName" : "shared.js",
+			"Function" : "device_notifications"
+		}, {
+			"Label" : {
+				"lang_tag" : "ui7_logs",
+				"text" : "Logs"
+			},
+			"Position" : "4",
+			"TabType" : "javascript",
+			"ScriptName" : "shared.js",
+			"Function" : "device_logs"
+		}, {
+			"Label" : {
+				"lang_tag" : "ui7_advanced",
+				"text" : "Advanced"
+			},
+			"Position" : "5",
+			"TabType" : "javascript",
+			"ScriptName" : "shared.js",
+			"Function" : "advanced_device"
+		},
+        {
+            "Label": {
+                "lang_tag": "ui7_device_scenes",
+                "text": "Scenes"
+            },
+            "Position": "6",
+            "TabType": "javascript",
+            "ScriptName": "shared.js",
+            "Function": "device_scenes"
+        }
+	],
+	"sceneList" : {
+		"group_1" : {
+			"cmd_1" : {
+				"label" : "ON",
+				"serviceId" : "urn:upnp-org:serviceId:Dimming1",
+				"action" : "SetLoadLevelTarget",
+				"arguments" : {
+					"newLoadlevelTarget" : "100"
+				},
+				"display" : {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"value" : "100"
+				}
+			},
+			"cmd_2" : {
+				"label" : "OFF",
+				"serviceId" : "urn:upnp-org:serviceId:Dimming1",
+				"action" : "SetLoadLevelTarget",
+				"arguments" : {
+					"newLoadlevelTarget" : "0"
+				},
+				"display" : {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus",
+					"value" : "0"
+				}
+			},
+			"cmd_3" : {
+				"label" : "Set level",
+				"serviceId" : "urn:upnp-org:serviceId:Dimming1",
+				"action" : "SetLoadLevelTarget",
+				"argumentList" : {
+					"argument_1" : {
+						"dataType" : "ui1",
+						"defaultValue" : "",
+						"allowedValueRange" : {
+							"minimum" : "0",
+							"maximum" : "100"
+						},
+						"prefix" : "to",
+						"suffix" : "%",
+						"name" : "newLoadlevelTarget"
+					}
+				},
+				"display" : {
+					"service" : "urn:upnp-org:serviceId:Dimming1",
+					"variable" : "LoadLevelStatus"
+				}
+			}
+		}
+	},
+	"eventList2" : [{
+			"id" : 1,
+			"label" : {
+				"lang_tag" : "ui7_a_device_is_turned_on_off",
+				"text" : "A device is turned on or off"
+			},
+			"serviceId" : "urn:upnp-org:serviceId:SwitchPower1",
+			"argumentList" : [{
+					"id" : 1,
+					"dataType" : "boolean",
+					"defaultValue" : "1",
+					"allowedValueList" : [{
+							"Off" : "0",
+							"HumanFriendlyText" : {
+								"lang_tag" : "ui7_hft_device_turned_off",
+								"text" : "_DEVICE_NAME_ is turned off"
+							}
+						}, {
+							"On" : "1",
+							"HumanFriendlyText" : {
+								"lang_tag" : "ui7_hft_device_turned_on",
+								"text" : "_DEVICE_NAME_ is turned on"
+							}
+						}
+					],
+					"name" : "Status",
+					"comparisson" : "=",
+					"prefix" : {
+						"lang_tag" : "ui7_which_mode",
+						"text" : "Which mode"
+					},
+					"suffix" : {}
+				}
+			]
+		}
+	],
+	"SceneAction": {
+		"Function": "PhilipsHueLamp2.sceneAction",
+		"ScriptName": "J_PhilipsHueLamp2.js"
+	},
+	"DeviceType" : "urn:schemas-micasaverde-com:device:PhilipsHueLamp:1"
+}
+ 

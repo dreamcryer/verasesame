@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <serviceStateTable>
+    <stateVariable sendEvents="no">
+      <name>Target</name>
+      <dataType>boolean</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>Status</name>
+      <dataType>boolean</dataType>
+      <xlogCode>DL_STATUS</xlogCode>
+      <shortCode>locked</shortCode>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>LockName</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>BatteryStatus</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_UserName</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Password</name>
+      <dataType>string</dataType>
+    </stateVariable>
+  </serviceStateTable>
+  <actionList>
+    <action>
+      <name>SetTarget</name>
+      <argumentList>
+        <argument>
+          <name>newTargetValue</name>
+          <direction>in</direction>
+          <relatedStateVariable>Target</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>SetUserName</name>
+      <argumentList>
+        <argument>
+          <name>newUserName</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_UserName</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>SetPassword</name>
+      <argumentList>
+        <argument>
+          <name>newPassword</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_Password</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>
+  </actionList>
+</scpd>

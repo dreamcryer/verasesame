@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<implementation>
+	<files>L_CandyHouseSesame.lua</files>
+	<startup>Init</startup>
+	<actionList>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:candyhousesesame1</serviceId>
+			<name>SetTarget</name>
+			<job>
+				if setSesameLock( lul_settings, lul_device ) then
+					return 4,30
+				else
+					return 2,30
+				end
+			</job>
+		</action>
+        <action>
+			<serviceId>urn:micasaverde-com:serviceId:candyhousesesame1</serviceId>
+			<name>SetUserName</name>
+			<run>
+				setUserName( lul_settings, lul_device )
+			</run>
+		</action>
+        <action>
+			<serviceId>urn:micasaverde-com:serviceId:candyhousesesame1</serviceId>
+			<name>SetPassword</name>
+			<run>
+				setPassword( lul_settings, lul_device )
+			</run>
+		</action>
+	</actionList>
+</implementation>
+ 

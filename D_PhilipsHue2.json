@@ -1,0 +1,205 @@
+{
+  "default_icon": "http://apps.mios.com/pluginicons/8162/bridgeOff.png",
+  "state_icons": [{
+    "img": "http://apps.mios.com/pluginicons/8162/bridgeOff.png",
+    "conditions": [{
+      "service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+      "variable": "BridgeLink",
+      "operator": "==",
+      "value": 0
+    }]
+  }, {
+    "img": "http://apps.mios.com/pluginicons/8162/bridgeOn.png",
+    "conditions": [{
+      "service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+      "variable": "BridgeLink",
+      "operator": "==",
+      "value": 1
+    }]
+  }],
+  "Tabs": [{
+    "Label": {
+      "lang_tag": "ui7_tabname_control",
+      "text": "Control"
+    },
+    "Position": "0",
+    "TopNavigationTab": 1,
+    "TabType": "flash",
+    "SceneGroup": [{
+      "id": "1",
+      "top": "1",
+      "left": "0",
+      "x": "2",
+      "y": "3"
+    }],
+    "top_navigation_tab": 1,
+    "ControlGroup": [{
+      "id": "1",
+      "isSingle": "1",
+      "scenegroup": "1"
+    }],
+    "Control": [{
+      "ControlGroup": "1",
+      "ControlType": "multi_state_button",
+      "IgnoreInCpanel": "1",
+      "top": "0",
+      "left": "0",
+      "states": [{
+        "Label": {
+          "lang_tag": "ui7_cmd_on",
+          "text": "On"
+        },
+        "ControlGroup": "1",
+        "Display": {
+          "Service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+          "Variable": "StateForAll",
+          "Value": "1"
+        },
+        "Command": {
+          "Service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+          "Action": "SetStateForAll",
+          "Parameters": [{
+            "Name": "StateAll",
+            "Value": "1"
+          }]
+        }
+      }, {
+        "Label": {
+          "lang_tag": "ui7_cmd_off",
+          "text": "Off"
+        },
+        "ControlGroup": "1",
+        "Display": {
+          "Service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+          "Variable": "StateForAll",
+          "Value": "0"
+        },
+        "Command": {
+          "Service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+          "Action": "SetStateForAll",
+          "Parameters": [{
+            "Name": "StateAll",
+            "Value": "0"
+          }]
+        }
+      }]
+    }]
+  },
+		{
+    "Label": {
+      "lang_tag": "ui7_configure",
+      "text": "Configure"
+    },
+    "Position": "2",
+    "TopNavigationTab": 1,
+    "TabType": "javascript",
+    "ScriptName": "J_PhilipsHue2.js",
+    "Function": "PhilipsHue2.configure",
+    "ConfigFunction" : "1",
+    "top_navigation_tab": 1
+  }, {
+    "Label": {
+      "lang_tag": "hue_presets_list",
+      "text": "Hue Presets List"
+    },
+    "Position": "2",
+    "TopNavigationTab": 1,
+    "TabType": "javascript",
+    "ScriptName": "J_PhilipsHue2.js",
+    "Function": "PhilipsHue2.sceneList"
+  }, {
+    "Label": {
+      "lang_tag": "hue_info_tab",
+      "text": "Information"
+    },
+    "Position": "3",
+    "TopNavigationTab": 1,
+    "TabType": "javascript",
+    "ScriptName": "J_PhilipsHue2.js",
+    "Function": "PhilipsHue2.infoTab"
+  }, {
+    "Label": {
+      "lang_tag": "ui7_advanced",
+      "text": "Advanced"
+    },
+    "Position": "4",
+    "TabType": "javascript",
+    "ScriptName": "shared.js",
+    "Function": "advanced_device"
+  }, {
+    "Label": {
+      "lang_tag": "ui7_logs",
+      "text": "Logs"
+    },
+    "Position": "6",
+    "TabType": "javascript",
+    "ScriptName": "shared.js",
+    "Function": "device_logs"
+  }, {
+    "Label": {
+      "lang_tag": "ui7_notifications",
+      "text": "Notifications"
+    },
+    "Position": "7",
+    "TabType": "javascript",
+    "ScriptName": "shared.js",
+    "Function": "device_notifications"
+  }, {
+    "Label": {
+      "lang_tag": "ui7_device_scenes",
+      "text": "Scenes"
+    },
+    "Position": "8",
+    "TabType": "javascript",
+    "ScriptName": "shared.js",
+    "Function": "device_scenes"
+  }],
+  "sceneList": {},
+  "eventList2": [{
+    "id": 3,
+    "label": {
+      "lang_tag": "ui7_a_preset_was_runned",
+      "text": "A Hue Preset was run"
+    },
+    "serviceId": "urn:micasaverde-com:serviceId:PhilipsHue1",
+    "argumentList": [{
+      "id": 1,
+      "dataType": "string",
+      "defaultValue": "",
+      "name": "LastHuePreset",
+      "ListOfValues": "urn:micasaverde-com:serviceId:PhilipsHue1,HuePresetTriggers",
+      "comparisson": "=",
+      "prefix": {
+        "lang_tag": "ui7_what_hue_preset",
+        "text": "What Hue Preset?"
+      },
+      "suffix": {},
+      "HumanFriendlyText": {
+        "lang_tag": "ui7_hft_hue_preset_is_run",
+        "text": "Hue Preset #_ARGUMENT_VALUE_ is run on _DEVICE_NAME_"
+      }
+    }]
+  }],
+  "sceneActionList": [{
+    "sceneGroup": "1",
+    "actions": [{
+      "id": "1",
+      "label": {
+        "lang_tag": "ui7_lang_favorite_hue_scene",
+        "text": "Run Favorite Hue Scene"
+      },
+      "serviceId": "urn:micasaverde-com:serviceId:PhilipsHue1",
+      "action": "RunHueScene",
+      "arguments": [{
+        "name": "Scene",
+        "valuesProvider": {
+          "service": "urn:micasaverde-com:serviceId:PhilipsHue1",
+          "variable": "ActionListScenes",
+          "separator": ";"
+        }
+      }]
+    }]
+  }],
+  "DeviceType": "urn:schemas-micasaverde-com:device:PhilipsHue:1",
+  "device_type": "urn:schemas-micasaverde-com:device:PhilipsHue:1"
+}

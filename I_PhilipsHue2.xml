@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<implementation>
+	<files>L_PhilipsHue2.lua</files>
+	<startup>Init</startup>
+	<actionList>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>SetBridgeIp</name>
+			<run>
+				SetBridgeIp(lul_settings.bridgeIP)
+			</run>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>ClearTask</name>
+			<job>
+				clearTask()
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>BridgeConnect</name>
+			<job>
+				bridgeConnect(lul_device)
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:upnp-org:serviceId:Dimming1</serviceId>
+			<name>SetLoadLevelTarget</name>
+			<job>
+				-- Pass settings to evaluate category 999 (All On/Off)
+				if setLoadLevelTarget( lul_settings, lul_device ) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:upnp-org:serviceId:SwitchPower1</serviceId>
+			<name>SetTarget</name>
+			<job>
+				-- Pass settings to evaluate category 999 (All On/Off)
+				if setLoadLevelTarget( lul_settings, lul_device ) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>SetHueAndSaturation</name>
+			<job>
+				if setHueAndSaturation(lul_settings.Hue, lul_settings.Saturation, lul_settings.Effect, lul_settings.Transitiontime, lul_device ) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>SetColorTemperature</name>
+			<job>
+				if setColorTemperature(lul_settings.ColorTemperature, lul_settings.Effect, lul_settings.Transitiontime,  lul_device ) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>SetLampValues</name>
+			<job>
+				if setLampValues( lul_settings.light_id, lul_settings.on_val, lul_settings.brightness, lul_settings.hue_val, lul_settings.saturation, lul_settings.x_val, lul_settings.y_val, lul_settings.colortemperature, lul_device ) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>CreateGroup</name>
+			<job>
+				if createGroup(lul_settings.Name, lul_settings.Lights, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>RunHueScene</name>
+			<job>
+				if runHueScene(lul_settings.Scene, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>CreateHueScene</name>
+			<job>
+				if createHueScene(lul_settings.Scene,lul_settings.Name,lul_settings.Lights, lul_settings.Transitiontime, lul_settings.Recycle, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>ModifyHueScene</name>
+			<job>
+				if modifyHueScene(lul_settings.Scene, lul_settings.Lights, lul_settings.Data, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>ModifyHueScene2</name>
+			<job>
+				if modifyHueScene2(lul_settings.Scene, lul_settings.Lights, lul_settings.Data, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>ModifyHueSceneNameLights</name>
+			<job>
+				if modifyHueSceneNameLights(lul_settings.Scene, lul_settings.Name, lul_settings.Lights, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>PollHueBridge</name>
+			<job>
+				if pollHueDevice(lul_settings.RunOnce, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>SetStateForAll</name>
+			<job>
+				if setStateForAll(lul_settings.StateAll, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>DeleteHueScene</name>
+			<job>
+				if deleteHueScene(lul_settings.Scene, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+		<action>
+			<serviceId>urn:micasaverde-com:serviceId:PhilipsHue1</serviceId>
+			<name>GetHueScene</name>
+			<job>
+				if getHueScene(lul_settings.Scene, lul_device) then
+					return 4,10
+				else
+					return 2,10
+				end
+			</job>
+		</action>
+	</actionList>
+</implementation>
+ 
